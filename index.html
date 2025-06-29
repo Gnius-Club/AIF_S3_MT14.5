@@ -1,24 +1,292 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-S3-M14.5</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Misión 14.5: El Widget de Múltiples Datos</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Esta es una sesión de refuerzo práctico para diseñar dashboards con múltiples fuentes de datos.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Secuencia y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes refuercen sus habilidades de diseño de interfaces.</li>
+                                        <li>Que diseñen e implementen un widget que visualice múltiples fuentes de datos de ThingSpeak en una interfaz cohesiva.</li>
+                                        <li>Que se centren en la organización del layout, la claridad informativa y la depuración de múltiples placeholders y estilos CSS.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡A.I. GYM:</strong> Repaso estratégico y contextualización de principios de diseño de dashboards.</li>
+                                        <li><strong class="tactic-highlight">⚡VIBE CODING:</strong> Diseño de la intención y generación de código por IA.</li>
+                                        <li><strong class="tactic-highlight">⚡ANÁLISIS DE CÓDIGO:</strong> Lectura y comprensión guiada del código generado ("Taming the Genie").</li>
+                                        <li><strong class="tactic-highlight">⚡IMPLEMENTACIÓN Y DEBUGGING:</strong> Pruebas de hardware/software y depuración colaborativa con Xolo.</li>
+                                        <li><strong class="tactic-highlight">⚡GNIUS STORM:</strong> Showcase de soluciones, síntesis de "insights" y reflexión iterativa.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un Plugin de ThingSpeak funcional que contiene código HTML y CSS para un dashboard que muestra al menos dos datos diferentes, organizados con una estructura de layout clara.</li>
+                                        <li>Comprensión demostrada de los principios de diseño de UI (jerarquía, agrupación) y de la depuración de layouts CSS.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Cuentas de estudiante para ThingSpeak con un canal activo enviando al menos dos datos (ej. temperatura y humedad).</li>
+                                        <li>Chat "Agente Gnius" (Xolo) operativo.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
+                                        <li>1 Micro:bit v2 con placa IOTbit y cable USB por equipo de 2 (enviando datos).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Verificación del Entorno Digital y Físico (Interna):</strong>
+                                            <ul>
+                                                <li>Asegurar que los estudiantes tengan acceso a sus canales de ThingSpeak y que estos estén recibiendo al menos dos flujos de datos.</li>
+                                                <li>Familiarizarse con las herramientas de desarrollador del navegador (Inspeccionar Elemento) para poder guiar en la depuración de CSS.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización Conceptual y Técnica:</strong> Repasar los principios de diseño de UI (jerarquía, agrupación, consistencia) y los fundamentos de CSS Flexbox para layouts.</li>
+                                        <li><strong>Preparación de la Demostración Práctica:</strong> Tener una solución funcional para el "Panel de Control Ambiental" para demostrar la estructura HTML anidada y el CSS con Flexbox.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
+                <p>Establecer el tono de la sesión, activar la IA y presentar el desafío del diseño de dashboards.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto Estratégico</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta el enfoque de la misión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Buenos días, diseñadores. Ya crearon su primer widget para un solo dato. En esta sesión práctica, el desafío aumenta: ¿cómo diseñamos una interfaz que muestre múltiples datos a la vez, de forma clara y sin crear confusión? Esta es una tarea diaria para los diseñadores de dashboards y UI.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación y Personalización de Xolo</h3>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo individual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Inicien su sesión con Xolo como de costumbre, compartiendo su perfil de aprendizaje e interés. Por ejemplo: <strong>'Hola Xolo. Soy Mateo, perfil Comunicador, y mi reto hoy es la claridad en la presentación de información compleja.'</strong> Procedan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 2 minutos</h2>
+                <p>Clarificar la meta de aprendizaje enfocada en el diseño de interfaces con múltiples datos.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: "I Can Statement" de Diseño de UI</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">La meta de hoy es aplicar principios de diseño. Al finalizar esta sesión, podrán afirmar: <strong>'Yo puedo aplicar principios de diseño de UI para crear un dashboard cohesivo que visualice múltiples fuentes de datos de forma clara y organizada.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM (Principios de Diseño) ⏰ 5 minutos</h2>
+                <p>Facilitar una sesión de aprendizaje sobre los principios clave para el diseño de dashboards efectivos.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Instrucción para el Aprendizaje Conceptual</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador dirige a los alumnos para que aprendan sobre principios de diseño.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Iniciamos el A.I. GYM. Antes de diseñar, aprendan los principios. De forma individual, usen este prompt con Xolo: <strong>'Xolo, ¿cuáles son los principios más importantes para diseñar un dashboard con varios datos?'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Síntesis del Facilitador</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador resume verbalmente los principios de diseño.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Excelente. Para resumir lo que Xolo les ha explicado, recuerden estas tres claves: **Jerarquía Visual** (lo más importante, más grande), **Agrupación Lógica** (agrupen datos relacionados) y **Consistencia** (mismos estilos para mismos elementos). Tengan esto en mente al diseñar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark (Diseño de Dashboard) ⏰ 27 minutos</h2>
+                <p>Los estudiantes diseñan e implementan un dashboard de múltiples datos en parejas.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentación del Desafío y Formación de Parejas</h3>
+                             <p>(Proyectar Diapositiva 6) El facilitador presenta el desafío de diseño y da la instrucción de formar parejas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, su desafío de diseño. Formen sus parejas. Su misión es diseñar un widget **libre** que visualice al menos dos datos de su sistema. Piensen en la organización, la jerarquía y la claridad. No solo muestren los datos, comuníquenlos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Diseño de la "Vibe" y Generación de Código</h3>
+                            <p>(Proyectar Diapositiva 7) Las parejas diseñan su dashboard, lo comunican a Xolo y reciben el código.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Definan la 'vibe' de su dashboard y luego trabajen con Xolo para generar el código HTML y CSS. Sean descriptivos. Por ejemplo: <strong>'Xolo, queremos un panel de control ambiental. Una tarjeta principal grande para la temperatura. Debajo, dos tarjetas más pequeñas, una al lado de la otra, para humedad y presión, usando un código de colores.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Implementación y Depuración de Layout</h3>
+                             <p>(Proyectar Diapositiva 8 y 9) Las parejas implementan su dashboard y depuran la estructura y el estilo CSS.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Implementen su dashboard. El desafío aquí es la estructura HTML anidada y el CSS para el layout. Si su diseño no se ve como esperaban, usen la herramienta 'Inspeccionar Elemento' de su navegador para depurar el CSS. Si las tarjetas no se alinean, describan el problema a Xolo. Por ejemplo: <strong>'Xolo, nuestras tarjetas pequeñas no se ponen una al lado de la otra.'</strong> Él los guiará para revisar su CSS Flexbox y la jerarquía de su HTML.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Reflexión) ⏰ 5 minutos</h2>
+                <p>El facilitador modera una reflexión final enfocada en el diseño de UI y la retroalimentación entre pares.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual)</h3>
+                            <p>(Proyectar Diapositiva 10) Instrucción para la reflexión individual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Bien, para cerrar, nuestro Think-Pair-Share. Individualmente, un minuto para pensar: ¿Qué otro dato añadirían a su dashboard y cómo lo representarían visualmente para mantener la claridad?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Gnius STORM (Pair - Parejas)</h3>
+                            <p>Los alumnos intercambian sus dashboards y se dan feedback.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, en parejas, intercambien sus dashboards. Tienen dos minutos para dar feedback constructivo a sus compañeros. Concéntrense en la claridad y el diseño. ¿La jerarquía es clara? ¿Es fácil de entender la información al primer vistazo?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Gnius STORM (Share & Synthesis)</h3>
+                            <p>Algunas parejas comparten sus diseños y el facilitador cierra la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Escuchemos a algunas parejas. Compartan el diseño de su dashboard y una decisión de diseño que tomaron para mejorar su claridad. (Escuchar respuestas). Han pasado de crear widgets a diseñar dashboards. Han aplicado principios de UI/UX para presentar información compleja de manera efectiva. Esta habilidad es fundamental en cualquier campo donde los humanos interactúen con datos. Excelente trabajo de diseño.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
